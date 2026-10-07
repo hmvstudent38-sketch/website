@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="pink">
+<center>
+<h1>Admission Form</h1>
+<a href="#" class="top-arrow">&uarr;</a>
+<a href="index.html">HOME |</a>
+<a href="about.html">ABOUT US |</a>
+<a href="form.html">ADMISSION FORM |</a>
+<a href="download.html">DOWNLOAD APP</a>
+</center>
+<br>
+<hr color="black" height="10" >
+<form action="form2.php" method="POST">
+<marquee bgcolor="aqua" behavior="alternate">
+welcome to our page
+</marquee><br><br>
+<h2>PERSONAL DETAIL</h2>
+<label for="name">Name <span style="color:red;" class="required">*</span></label>
+<input type="text" name="student_name" placeholder="enter your name" required><br><br>
+<label>FATHER'S NAME:</label>&nbsp;&nbsp;&nbsp;
+<input type="text" name="father_name"><br><br>
+<label>MOTHER'NAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="mother_name"><br><br>
+<br><br>
+<label>AADHAR NUMBER</label>
+<input type="text" id="aadhar" name="aadhar" maxlength="12">
+<br><br><br>
+<label>COURSE NAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="text" name="course_name">
+<br><br>
+<label>Fee Status:</label>&nbsp;&nbsp;
+<select name="fee_status">
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select>
+<br><br><br>
+<h2>CONTACT DETAILS</h2>
+<br><br>
+<label>MOBILE NUMBER:</label>
+<input type="tel" name="mobile" maxlength="10" minlength="10" pattern="[0-9]{10}"required>
+<br><br>
+<label>EMAIL ID:</label>
+<input type="text" name="email" >
+<br><br>
+<label>ADDRESS:</label>
+<input type="text" name="address">
+<br><br>
+<label>CITY:</label>
+<input type="text" name="city">
+<br><br>
+<label>STATE:</label>
+<input type="text" name="state">
+<br><br>
+<label>PIN CODE</label>
+<input type="text" name="pin">
+<BR><BR>
+<CENTER>
+<button type="reset" name="reset">RESET</button>&nbsp;
+<BUTTON NAME="SUBMIT">SUBMIT</BUTTON>
+</form>
+</CENTER>
+</body>
+</html>
